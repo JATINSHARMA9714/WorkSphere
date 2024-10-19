@@ -2,6 +2,7 @@
 const employees = [
     {
         "id": 1,
+        "name": "Ravi Kumar",
         "email": "employee1@example.com",
         "password": "123",
         "tasks": [
@@ -25,10 +26,12 @@ const employees = [
                 "completed": false,
                 "failed": false
             }
-        ]
+        ],
+        "taskCount": { "active": 2, "newtask": 1, "completed": 0, "failed": 0 }
     },
     {
         "id": 2,
+        "name": "Asha Patel",
         "email": "employee2@example.com",
         "password": "123",
         "tasks": [
@@ -62,10 +65,12 @@ const employees = [
                 "completed": false,
                 "failed": false
             }
-        ]
+        ],
+        "taskCount": { "active": 3, "newtask": 2, "completed": 0, "failed": 0 }
     },
     {
         "id": 3,
+        "name": "Anil Singh",
         "email": "employee3@example.com",
         "password": "123",
         "tasks": [
@@ -99,10 +104,12 @@ const employees = [
                 "completed": false,
                 "failed": false
             }
-        ]
+        ],
+        "taskCount": { "active": 3, "newtask": 1, "completed": 1, "failed": 0 }
     },
     {
         "id": 4,
+        "name": "Priya Sharma",
         "email": "employee4@example.com",
         "password": "123",
         "tasks": [
@@ -126,10 +133,12 @@ const employees = [
                 "completed": false,
                 "failed": false
             }
-        ]
+        ],
+        "taskCount": { "active": 2, "newtask": 2, "completed": 0, "failed": 0 }
     },
     {
         "id": 5,
+        "name": "Suman Verma",
         "email": "employee5@example.com",
         "password": "123",
         "tasks": [
@@ -153,19 +162,24 @@ const employees = [
                 "completed": false,
                 "failed": false
             }
-        ]
+        ],
+        "taskCount": { "active": 2, "newtask": 1, "completed": 0, "failed": 0 }
     }
 ];
 
 
 
-        const admin = [
-        {
-          "id": 1,
-          "email": "admin@example.com",
-          "password": "123"
-        }
-    ]
+
+
+const admin = [
+    {
+        "id": 1,
+        "name": "Admin User",
+        "email": "admin@example.com",
+        "password": "123"
+    }
+];
+
       
 
 
@@ -179,8 +193,7 @@ const employees = [
 
        const adminData = JSON.parse(localStorage.getItem('admin'));
 
-       console.log(employeeData);
-       console.log(adminData);
+       return {admin:adminData,employees:employeeData};
        
        
        
