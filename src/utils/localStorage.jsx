@@ -12,7 +12,7 @@ const employees = [
                 "date": "2024-10-18",
                 "category": "Documentation",
                 "active": true,
-                "newtask": true,
+                "newtask": false,
                 "completed": false,
                 "failed": false
             },
@@ -21,13 +21,13 @@ const employees = [
                 "description": "Attend the weekly team meeting.",
                 "date": "2024-10-19",
                 "category": "Meeting",
-                "active": true,
-                "newtask": false,
+                "active": false,
+                "newtask": true,
                 "completed": false,
                 "failed": false
             }
         ],
-        "taskCount": { "active": 2, "newtask": 1, "completed": 0, "failed": 0 }
+        "taskCount": { "active": 1, "newtask": 1, "completed": 0, "failed": 0 }
     },
     {
         "id": 2,
@@ -41,7 +41,7 @@ const employees = [
                 "date": "2024-10-18",
                 "category": "Development",
                 "active": true,
-                "newtask": true,
+                "newtask": false,
                 "completed": false,
                 "failed": false
             },
@@ -50,8 +50,8 @@ const employees = [
                 "description": "Add new features to the product documentation.",
                 "date": "2024-10-20",
                 "category": "Documentation",
-                "active": true,
-                "newtask": false,
+                "active": false,
+                "newtask": true,
                 "completed": false,
                 "failed": false
             },
@@ -60,13 +60,13 @@ const employees = [
                 "description": "Conduct a code review session for the new project.",
                 "date": "2024-10-22",
                 "category": "Development",
-                "active": true,
-                "newtask": true,
-                "completed": false,
+                "active": false,
+                "newtask": false,
+                "completed": true,
                 "failed": false
             }
         ],
-        "taskCount": { "active": 3, "newtask": 2, "completed": 0, "failed": 0 }
+        "taskCount": { "active": 1, "newtask": 1, "completed": 1, "failed": 0 }
     },
     {
         "id": 3,
@@ -80,7 +80,7 @@ const employees = [
                 "date": "2024-10-25",
                 "category": "Presentation",
                 "active": true,
-                "newtask": true,
+                "newtask": false,
                 "completed": false,
                 "failed": false
             },
@@ -89,7 +89,7 @@ const employees = [
                 "description": "Complete the design for the new product feature.",
                 "date": "2024-10-18",
                 "category": "Design",
-                "active": true,
+                "active": false,
                 "newtask": false,
                 "completed": true,
                 "failed": false
@@ -99,13 +99,13 @@ const employees = [
                 "description": "Test the recently developed feature.",
                 "date": "2024-10-21",
                 "category": "Testing",
-                "active": true,
+                "active": false,
                 "newtask": false,
                 "completed": false,
-                "failed": false
+                "failed": true
             }
         ],
-        "taskCount": { "active": 3, "newtask": 1, "completed": 1, "failed": 0 }
+        "taskCount": { "active": 1, "newtask": 0, "completed": 1, "failed": 1 }
     },
     {
         "id": 4,
@@ -119,7 +119,7 @@ const employees = [
                 "date": "2024-10-28",
                 "category": "Finance",
                 "active": true,
-                "newtask": true,
+                "newtask": false,
                 "completed": false,
                 "failed": false
             },
@@ -128,13 +128,13 @@ const employees = [
                 "description": "Resolve ongoing issues with the production server.",
                 "date": "2024-10-19",
                 "category": "IT",
-                "active": true,
-                "newtask": true,
+                "active": false,
+                "newtask": false,
                 "completed": false,
-                "failed": false
+                "failed": true
             }
         ],
-        "taskCount": { "active": 2, "newtask": 2, "completed": 0, "failed": 0 }
+        "taskCount": { "active": 1, "newtask": 0, "completed": 0, "failed": 1 }
     },
     {
         "id": 5,
@@ -157,15 +157,16 @@ const employees = [
                 "description": "Create materials for the upcoming training session.",
                 "date": "2024-10-23",
                 "category": "HR",
-                "active": true,
+                "active": false,
                 "newtask": true,
                 "completed": false,
                 "failed": false
             }
         ],
-        "taskCount": { "active": 2, "newtask": 1, "completed": 0, "failed": 0 }
+        "taskCount": { "active": 1, "newtask": 1, "completed": 0, "failed": 0 }
     }
 ];
+
 
 
 

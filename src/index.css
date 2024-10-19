@@ -16,3 +16,9 @@ html,body{
 #tasklist::-webkit-scrollbar{
     display: none;
 }
+#verticleScroll::-webkit-scrollbar{
+    width: 5px;
+}
+#verticleScroll::-webkit-scrollbar-thumb{
+    background-color: rgb(206, 201, 201);
+}

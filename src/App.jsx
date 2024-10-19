@@ -3,6 +3,7 @@ import Login from "./components/Authentication/Login";
 import EmployeeDashboard from "./components/Dashboard/EmployeeDashboard";
 import AdminDashboard from "./components/Dashboard/AdminDashboard";
 import { AuthContext } from "./context/AuthProvider";
+import { setLocalStorage } from "./utils/localStorage";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -18,6 +19,7 @@ const App = () => {
       setLoggedInUserData(userData.data);
     }
   },[]);
+
 
   const handleLogin = (email, password) => {
     if (
@@ -52,12 +54,13 @@ const App = () => {
     }
   };
 
+
   return (
     <>
         {!user ? <Login handleLogin={handleLogin} /> : ""}
-        {user == "admin" ? <AdminDashboard data={loggedInUserData} /> : ""}
+        {user == "admin" ? <AdminDashboard changeUser={setUser} data={loggedInUserData} /> : ""}
         {user == "employee" ? (
-          <EmployeeDashboard data={loggedInUserData} />
+          <EmployeeDashboard changeUser={setUser} data={loggedInUserData} />
         ) : (
           ""
         )}
