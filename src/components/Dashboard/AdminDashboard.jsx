@@ -5,7 +5,7 @@ import AllTask from "../Other/AllTask";
 
 const AdminDashboard = ({changeUser}) => {
   return (
-    <div className="h-screen w-full p-7">
+    <div className="h-screen w-full p-7 ">
       <Header changeUser={changeUser} />
       <CreateTask/>
       <AllTask/>
